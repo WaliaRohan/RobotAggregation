@@ -13,7 +13,7 @@ We use CMake
     
 ## Running
 
-Make sure you are in the "Robot Aggregation folder"
+Make sure you are in the "Robot Aggregation" folder
 
     ./run
 
