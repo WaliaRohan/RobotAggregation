@@ -10,6 +10,12 @@ We use CMake
     cd build
     cmake ..
     make
+    
+## Running
+
+Make sure you are in the "Robot Aggregation folder"
+
+    ./run
 
 ## Reproducing experimental results
 
