@@ -1,0 +1,1 @@
+./build/bin/evaluate -t 1 experiments/4_class/40_uniform_0.05_density.argos build/loop_functions/libsegregation_loop_function.so params/new_grid_search.dat -z -s 0

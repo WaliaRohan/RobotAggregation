@@ -8,7 +8,10 @@ pkg_check_modules(ARGOS REQUIRED argos3_simulator)
 set(ARGOS_PREFIX ${ARGOS_PREFIX} CACHE INTERNAL "")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ARGOS_PREFIX}/share/argos3/cmake)
 
-include_directories(${CMAKE_SOURCE_DIR} ${ARGOS_INCLUDE_DIRS})
+# Find Lua
+find_package(Lua REQUIRED)
+
+include_directories(${CMAKE_SOURCE_DIR} ${ARGOS_INCLUDE_DIRS} ${LUA_INCLUDE_DIR})
 link_directories(${ARGOS_LIBRARY_DIRS})
 
 add_subdirectory(controllers)
